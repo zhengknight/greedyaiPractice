@@ -39,4 +39,6 @@ plt.xlabel("Money spent on TV ads")
 plt.ylabel("Sales")
 plt.show()
 
-#做预测，假设下一年度公司想投入
+#做预测，假设下一年度公司想投入100百万，那么预期的销量如何那？
+predictions_100 = reg.predict([[100]])
+print("投入1亿广告费，预计销量为：{:.5}".format(predictions_100[0][0]))
